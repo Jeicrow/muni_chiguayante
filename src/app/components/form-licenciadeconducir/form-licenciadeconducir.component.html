@@ -1,0 +1,57 @@
+<section class="licencia-conducir">
+  <div class="container">
+    <h2 class="form-title">Solicitud de Licencia de Conducir</h2>
+    <p class="form-subtitle">Rellena los datos para iniciar tu proceso de solicitud de licencia</p>
+    <form action="#" class="solicitud-form">
+      <!-- Información Personal -->
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" placeholder="Ingresa tu RUT" required>
+      </div>
+
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" placeholder="Ingresa tu dirección" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="Ingresa tu teléfono de contacto" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+
+      <!-- Información del Vehículo -->
+      <h3 class="section-title">Información del Vehículo</h3>
+      <div class="form-group">
+        <label for="tipo-licencia">Tipo de Licencia Solicitada:</label>
+        <select id="tipo-licencia" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Clase B">Clase B - Automóviles</option>
+          <option value="Clase A2">Clase A2 - Motos</option>
+          <option value="Clase A3">Clase A3 - Camiones</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="vehiculo">Tipo de Vehículo:</label>
+        <input type="text" id="vehiculo" placeholder="Ej: Automóvil, Motocicleta, Camión" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha-solicitud">Fecha de Solicitud:</label>
+        <input type="date" id="fecha-solicitud" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar Solicitud</button>
+    </form>
+  </div>
+</section>
