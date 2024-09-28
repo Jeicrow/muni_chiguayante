@@ -1,11 +1,27 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { FormLicenciadeconducirComponent } from './components/form-licenciadeconducir/form-licenciadeconducir.component';
-import { MenuNavegacionComponent } from './components/menu-navegacion/menu-navegacion.component';
 
 export const routes: Routes = [
-  { path: '', component: MenuNavegacionComponent },
+  {
+    path: '',
+    component: MainLayoutComponent,
+    children: [
+      
+    ],
+  },
   {
     path: 'form-licenciadeconducir',
     component: FormLicenciadeconducirComponent,
   },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
+
+

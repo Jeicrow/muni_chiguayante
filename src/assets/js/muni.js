@@ -2,10 +2,10 @@ window.onscroll = function () {
   var scrollText = document.getElementById("scroll-text");
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    // Si el usuario ha bajado más de 50 píxeles, muestra el texto
+    
     scrollText.style.display = "block";
   } else {
-    // Si el usuario vuelve a la parte superior, oculta el texto
+  
     scrollText.style.display = "none";
   }
 };
